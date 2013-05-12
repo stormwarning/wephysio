@@ -3473,18 +3473,39 @@ h1, h2 {
 
 .logo {
   display: block;
+  margin: 24px 8.333%;
 }
 
 .nav__wrapper {
   background: #80a51b;
+  color: #fff;
+}
+
+.nav__wrapper .grid {
+  text-align: center;
+}
+
+.nav--main {
+  text-align: right;
+}
+
+.nav--dropdown {
+  display: none;
 }
 
 .hero {
-  background: #80a51b;
+  background: rgba(128, 165, 27, 0.13);
+}
+
+.hero .grid {
+  text-align: center;
 }
 
 .hero h2 {
   color: #fff;
+  margin-bottom: 0;
+  text-align: left;
+  text-shadow: 0px 1px 0px #80a51b;
 }
 @media screen and (min-width: 64em) {
   .hero h2 {
@@ -3492,4 +3513,30 @@ h1, h2 {
     padding-bottom: 48px;
     width: 33.333%;
   }
+}
+
+.content > .grid {
+  text-align: center;
+}
+
+.content .grid .grid {
+  text-align: left;
+}
+
+.content__intro {
+  color: #006e89;
+  font-family: "Titillium Web", sans-serif;
+}
+
+footer {
+  background: #80a51b;
+  color: #fff;
+}
+
+footer > .grid {
+  text-align: center;
+}
+
+footer .grid .grid {
+  text-align: left;
 }
