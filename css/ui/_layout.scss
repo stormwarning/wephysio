@@ -26,15 +26,29 @@ h1, h2 {
 // -------------------------------------//
 .logo {
   display: block;
+  margin: $base-spacing-unit 8.333%;
 }
 
 
 
 
-// $Hero block
+// $Navigation block
 // -------------------------------------//
 .nav__wrapper {
   background: $brand-green;
+  color: #fff;
+}
+
+.nav__wrapper .grid {
+  text-align: center;
+}
+
+.nav--main {
+  text-align: right;
+}
+
+.nav--dropdown {
+  display: none;
 }
 
 
@@ -43,14 +57,57 @@ h1, h2 {
 // $Hero block
 // -------------------------------------//
 .hero {
-  background: $brand-green;
+  background: transparentize($brand-green, 0.87);
 }
+.hero .grid {
+  text-align: center;
+}
+
 .hero h2 {
   color: #fff;
+  margin-bottom: 0;
+  text-align: left;
+  text-shadow: 0px 1px 0px $brand-green;
 
   @include breakpoint(desk) {
     padding-top: $base-spacing-unit * 2;
     padding-bottom: $base-spacing-unit * 2;
     width: 33.333%;
   }
+}
+
+
+
+// $Content block
+// -------------------------------------//
+.content {
+
+}
+
+.content > .grid {
+  text-align: center;
+}
+.content .grid .grid {
+  text-align: left;
+}
+
+.content__intro {
+  color: $brand-blue;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+
+
+
+// $Content block
+// -------------------------------------//
+footer {
+  background: $brand-green;
+  color: #fff;
+}
+footer > .grid {
+  text-align: center;
+}
+footer .grid .grid {
+  text-align: left;
 }
