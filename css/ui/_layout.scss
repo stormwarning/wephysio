@@ -18,3 +18,28 @@ body {
 h1, h2 {
   font-weight: normal;
 }
+
+
+
+
+// $Hero block
+// -------------------------------------//
+.nav__wrapper {
+  background: $brand-green;
+}
+
+
+
+
+// $Hero block
+// -------------------------------------//
+.hero {
+  background: $brand-green;
+}
+.hero h2 {
+  color: #fff;
+  
+  @include breakpoint(desk) {
+    width: 25%;
+  }
+}
