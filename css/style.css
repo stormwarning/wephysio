@@ -3486,7 +3486,16 @@ h1, h2 {
 }
 
 .nav--main {
+  margin-top: 12px;
+  margin-bottom: 12px;
   text-align: right;
+}
+
+.nav--main a {
+  color: #fff;
+  font-family: "Titillium Web", sans-serif;
+  margin-left: 24px;
+  text-decoration: none;
 }
 
 .nav--dropdown {
@@ -3515,6 +3524,10 @@ h1, h2 {
   }
 }
 
+.content {
+  padding: 24px 0 0 0;
+}
+
 .content > .grid {
   text-align: center;
 }
@@ -3528,9 +3541,19 @@ h1, h2 {
   font-family: "Titillium Web", sans-serif;
 }
 
+.content a {
+  color: #f7a600;
+  text-decoration: none;
+}
+
+.content a:hover {
+  border-bottom: 1px solid;
+}
+
 footer {
   background: #80a51b;
   color: #fff;
+  padding: 24px 0;
 }
 
 footer > .grid {
@@ -3539,4 +3562,18 @@ footer > .grid {
 
 footer .grid .grid {
   text-align: left;
+}
+
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+  color: #fff;
+  font-weight: normal;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  border-bottom: 1px solid;
 }
