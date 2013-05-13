@@ -44,7 +44,16 @@ h1, h2 {
 }
 
 .nav--main {
+  margin-top: $base-spacing-unit / 2;
+  margin-bottom: $base-spacing-unit / 2;
   text-align: right;
+}
+
+.nav--main a {
+  color: #fff;
+  font-family: 'Titillium Web', sans-serif;
+  margin-left: $base-spacing-unit;
+  text-decoration: none;
 }
 
 .nav--dropdown {
@@ -81,7 +90,7 @@ h1, h2 {
 // $Content block
 // -------------------------------------//
 .content {
-
+  padding: $base-spacing-unit 0 0 0;
 }
 
 .content > .grid {
@@ -96,6 +105,14 @@ h1, h2 {
   font-family: 'Titillium Web', sans-serif;
 }
 
+.content a {
+  color: $brand-orange;
+  text-decoration: none;
+}
+.content a:hover {
+  border-bottom: 1px solid;
+}
+
 
 
 
@@ -104,10 +121,25 @@ h1, h2 {
 footer {
   background: $brand-green;
   color: #fff;
+  padding: $base-spacing-unit 0;
 }
 footer > .grid {
   text-align: center;
 }
 footer .grid .grid {
   text-align: left;
+}
+
+footer %hN {
+  color: #fff;
+  font-weight: normal;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  border-bottom: 1px solid;
 }
