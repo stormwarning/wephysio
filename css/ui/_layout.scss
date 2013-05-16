@@ -66,7 +66,10 @@ h1, h2 {
 // $Hero block
 // -------------------------------------//
 .hero {
-  background: transparentize($brand-green, 0.87);
+  background-color: transparentize($brand-green, 0.87);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero .grid {
   text-align: center;
@@ -83,6 +86,10 @@ h1, h2 {
     padding-bottom: $base-spacing-unit * 2;
     width: 33.333%;
   }
+}
+
+.hero--cycling {
+  background-image: url(img/hero-cycling.jpg);
 }
 
 
@@ -103,6 +110,12 @@ h1, h2 {
 .content__intro {
   color: $brand-blue;
   font-family: 'Titillium Web', sans-serif;
+  padding-right: 8.333%;
+}
+
+.content__funnel {
+  border-left: 1px solid $brand-blue;
+  padding-left: 8.333%;
 }
 
 .content a {
@@ -116,12 +129,12 @@ h1, h2 {
 
 
 
-// $Content block
+// $Footer block
 // -------------------------------------//
 footer {
   background: $brand-green;
   color: #fff;
-  padding: $base-spacing-unit 0;
+  padding: $base-spacing-unit 0 $base-spacing-unit * 2;
 }
 footer > .grid {
   text-align: center;
