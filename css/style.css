@@ -3085,7 +3085,7 @@ h1, h2 {
       width: 33.333%; } }
 
 .hero--cycling {
-  background-image: url(img/hero-cycling.jpg); }
+  background-image: url(../img/hero-cycling.jpg); }
 
 .content {
   padding: 24px 0 0 0; }
@@ -3104,6 +3104,21 @@ h1, h2 {
 .content__funnel {
   border-left: 1px solid #006e89;
   padding-left: 8.333%; }
+
+.funnel {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 65px 65px;
+  min-height: 65px;
+  padding-left: 80px; }
+
+.funnel--wellness {
+  background-image: url(../img/icon-wellness.png);
+  background-image: url(../img/icon-wellness.svg), none; }
+
+.funnel--performance {
+  background-image: url(../img/icon-wellness.png);
+  background-image: url(../img/icon-performance.svg), none; }
 
 .content a {
   color: #f7a600;
