@@ -6,6 +6,6 @@
     @media screen and (min-width: $desk-start) { @content; }
   }
   @else if $point == lap {
-    @media screen and (min-width: $lap-start) and (max-width: $desk-start) { @content; }
+    @media screen and (min-width: $lap-start) { @content; }
   }
 }
