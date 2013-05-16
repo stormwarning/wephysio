@@ -190,3 +190,13 @@ footer a[href^="mailto"] {
 footer a:hover {
   border-bottom: 1px solid;
 }
+
+.foot__copyright {
+  background-image: url(../img/logo-wephysio-white.png);
+  background-image: url(../img/logo-wephysio-white.svg), none;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 93px 79px;
+  min-height: 100px;
+  text-align: right;
+}
