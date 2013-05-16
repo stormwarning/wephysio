@@ -3076,9 +3076,11 @@ h1, h2 {
 .hero h2 {
   color: #fff;
   margin-bottom: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
   text-align: left;
   text-shadow: 0px 1px 0px #80a51b; }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 37.5em) {
     .hero h2 {
       padding-top: 48px;
       padding-bottom: 48px;
@@ -3098,12 +3100,20 @@ h1, h2 {
 
 .content__intro {
   color: #006e89;
-  font-family: "Titillium Web", sans-serif;
-  padding-right: 8.333%; }
+  font-family: "Titillium Web", sans-serif; }
+  @media screen and (min-width: 37.5em) {
+    .content__intro {
+      padding-right: 8.333%; } }
 
 .content__funnel {
-  border-left: 1px solid #006e89;
-  padding-left: 8.333%; }
+  border-top: 1px solid #006e89;
+  padding-top: 24px; }
+  @media screen and (min-width: 37.5em) {
+    .content__funnel {
+      border-top: none;
+      border-left: 1px solid #006e89;
+      padding-top: 0;
+      padding-left: 8.333%; } }
 
 .funnel {
   background-position: 0 0;
