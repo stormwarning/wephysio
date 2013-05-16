@@ -3156,5 +3156,8 @@ footer a {
   color: #fff;
   text-decoration: none; }
 
+footer a[href^="mailto"] {
+  font-family: "Titillium Web", sans-serif; }
+
 footer a:hover {
   border-bottom: 1px solid; }
