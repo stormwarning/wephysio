@@ -9,3 +9,12 @@
     @media screen and (min-width: $lap-start) { @content; }
   }
 }
+
+
+
+
+@mixin icon-bg($icon) {
+// Set the .png first, and if browser understands multiple backgrounds it probably understands .svg too
+  background-image: url(../img/icon-#{$icon}.png);
+  background-image: url(../img/icon-#{$icon}.svg), none;
+}
