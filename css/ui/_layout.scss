@@ -13,10 +13,32 @@ body {
 
 // styles for all headings, in the style of @csswizardry
 %hN {
+  color: $brand-orange;
   font-family: 'Titillium Web', sans-serif;
 }
-h1, h2 {
+h1, h2, h3 {
   font-weight: normal;
+}
+
+.content h1 {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 80px;
+  text-align: left;
+}
+
+.title--wellness {
+  @include icon-bg(wellness);
+}
+.title--performance {
+  @include icon-bg(performance);
+}
+.title--cardio {
+  @include icon-bg(cardio);
+}
+.title--people {
+  @include icon-bg(people);
 }
 
 
@@ -99,7 +121,7 @@ h1, h2 {
 // $Content block
 // -------------------------------------//
 .content {
-  padding: $base-spacing-unit 0 0 0;
+  padding: $base-spacing-unit * 2 0 $base-spacing-unit * 2 0;
 }
 
 .content > .grid {
@@ -145,16 +167,48 @@ h1, h2 {
 }
 
 .funnel--performance {
-  background-image: url(../img/icon-wellness.png);
+  background-image: url(../img/icon-performance.png);
   background-image: url(../img/icon-performance.svg), none;
+}
+
+.content__aside {
+  color: $brand-blue;
+}
+
+.content__aside dt {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
+  margin-left:2 * $base-spacing-unit;
+  margin-left:(2 * $base-spacing-unit / $base-font-size)*1rem;
+}
+
+.content__aside dd {
+  margin-bottom:2 * $base-spacing-unit;
+  margin-bottom:(2 * $base-spacing-unit / $base-font-size)*1rem;
+}
+
+.content__callout {
+  background-color: $brand-blue;
+  background-image: url(../img/bg-running.png);
+  background-image: url(../img/bg-running.svg), none;
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+  background-size: 200px auto;
+  color: #fff;
+  padding: $base-spacing-unit * 2 $base-spacing-unit * 12 $base-spacing-unit * 2 $base-spacing-unit * 2;
+
+  h3 {
+    color: #fff;
+  }
 }
 
 .content a {
   color: $brand-orange;
   text-decoration: none;
-}
-.content a:hover {
-  border-bottom: 1px solid;
+
+  &:hover {
+    border-bottom: 1px solid;
+  }
 }
 
 
@@ -198,5 +252,12 @@ footer a:hover {
   background-repeat: no-repeat;
   background-size: 93px 79px;
   min-height: 100px;
+  position: relative;
   text-align: right;
+
+  p {
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0; right: 100px;
+  }
 }
