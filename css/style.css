@@ -3168,8 +3168,22 @@ h1, h2, h3 {
   margin-left: 24px;
   text-decoration: none; }
 
+.dropdown {
+  position: relative; }
+
 .nav--dropdown {
-  display: none; }
+  background: rgba(128, 165, 27, 0.8);
+  display: none;
+  margin-top: 12px;
+  width: 240px;
+  padding: 24px;
+  position: absolute;
+  top: 100%;
+  right: -24px;
+  z-index: 1000; }
+
+.open .nav--dropdown {
+  display: block; }
 
 .hero {
   background-color: rgba(128, 165, 27, 0.13);
