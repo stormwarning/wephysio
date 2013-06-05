@@ -78,8 +78,23 @@ h1, h2, h3 {
   text-decoration: none;
 }
 
+.dropdown {
+  position: relative;
+}
+
 .nav--dropdown {
+  background: transparentize($brand-green, 0.2);
   display: none;
+  margin-top: $base-spacing-unit/2;
+  width: $base-spacing-unit*10;
+  padding: $base-spacing-unit;
+  position: absolute;
+  top: 100%; right: -$base-spacing-unit;
+  z-index: 1000;
+}
+
+.open .nav--dropdown {
+  display: block;
 }
 
 
