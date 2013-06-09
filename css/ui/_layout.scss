@@ -16,7 +16,7 @@ body {
   color: $brand-orange;
   font-family: 'Titillium Web', sans-serif;
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-weight: normal;
 }
 
@@ -269,8 +269,13 @@ h1, h2, h3 {
 }
 
 .content__main .media {
-  margin-bottom:$base-spacing-unit*2;
-  margin-bottom:($base-spacing-unit*2 / $base-font-size)*1rem;
+  margin-bottom: $base-spacing-unit*2;
+  margin-bottom: ($base-spacing-unit*2 / $base-font-size)*1rem;
+}
+
+.content__main h1 + .media {
+  margin-top: $base-spacing-unit;
+  margin-top: ($base-spacing-unit / $base-font-size)*1rem;
 }
 
 .content__aside {
@@ -288,6 +293,15 @@ h1, h2, h3 {
 .content__aside dd {
   margin-bottom:2 * $base-spacing-unit;
   margin-bottom:(2 * $base-spacing-unit / $base-font-size)*1rem;
+}
+
+.content__aside h4 {
+  margin-left:2 * $base-spacing-unit;
+  margin-left:(2 * $base-spacing-unit / $base-font-size)*1rem;
+}
+.content__aside p {
+  margin-left:2 * $base-spacing-unit;
+  margin-left:(2 * $base-spacing-unit / $base-font-size)*1rem;
 }
 
 .content__callout {
