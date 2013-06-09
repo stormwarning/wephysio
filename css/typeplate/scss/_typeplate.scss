@@ -32,7 +32,7 @@
 // -------------------------------------//
 
 $weight: normal;
-$line-height: 1.65;
+$line-height: 1.62;
 $font-size: 112.5; // percentage value (16 * 112.5% = 18px)
 $font-base: 16 * ($font-size/100); // converts our percentage to a pixel value
 $measure: $font-base * $line-height;
@@ -456,8 +456,8 @@ p {
 	margin: 0 0 $indent-val;
 	& + p {
 		//siblings indentation
-		text-indent: $indent-val;
-		margin-top: -$indent-val;
+		//text-indent: $indent-val;
+		margin-top: -$indent-val/2;
 	}
 }
 

@@ -43,6 +43,11 @@ h1, h2, h3 {
 }
 
 
+.delta {
+  margin-bottom: measure-margin($gamma, $measure, rem);
+}
+
+
 
 
 // $Logo block
@@ -85,7 +90,8 @@ h1, h2, h3 {
 }
 
 .nav--main > li > a:hover {
-  background: #fff;
+  background: url(../img/bg-nav-active.png) no-repeat center bottom;
+  color: transparentize(#fff, 0.2);
 }
 
 .dropdown {
@@ -96,7 +102,7 @@ h1, h2, h3 {
   background: transparentize($brand-green, 0.2);
   display: none;
   width: $base-spacing-unit*10;
-  padding: $base-spacing-unit/2 $base-spacing-unit;
+  padding: $base-spacing-unit/2 $base-spacing-unit $base-spacing-unit/2 $base-spacing-unit/4;
   position: absolute;
   top: 100%; right: -$base-spacing-unit;
   z-index: 1000;
@@ -262,8 +268,14 @@ h1, h2, h3 {
   background-image: url(../img/icon-performance.svg), none;
 }
 
+.content__main .media {
+  margin-bottom:$base-spacing-unit*2;
+  margin-bottom:($base-spacing-unit*2 / $base-font-size)*1rem;
+}
+
 .content__aside {
   color: $brand-blue;
+  font-size: 90%;
 }
 
 .content__aside dt {
@@ -335,6 +347,33 @@ footer a[href^="mailto"] {
 footer a:hover {
   border-bottom: 1px solid;
 }
+
+
+
+
+.sprite {
+  height: 32px;
+  width: 32px;
+}
+.sprite:hover {
+  border: 0;
+}
+
+.sprite--twitter {
+  @include logo-bg(twitter-white);
+}
+.sprite--facebook {
+  @include logo-bg(facebook-white);
+}
+.sprite--linkedin {
+  @include logo-bg(linkedin-white);
+}
+.sprite--youtube {
+  @include logo-bg(youtube-white);
+}
+
+
+
 
 .foot__copyright {
   background-image: url(../img/logo-wephysio-white.png);
