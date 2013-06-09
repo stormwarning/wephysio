@@ -1804,6 +1804,99 @@ label,
 .islet {
   padding: 12px; }
 
+/*------------------------------------*\
+    $SPRITE
+\*------------------------------------*/
+/**
+ * Giving an element a class of `.sprite` will throw it into ‘sprite’ mode and apply
+ * a background image e.g.:
+ *
+   <a class="sprite  sprite--question-mark">More info&hellip;</a>
+ *
+ * or
+ *
+   <a href=#><i class="sprite  sprite--question-mark"></i> Help and FAQ</a>
+ *
+ * Giving an element a class of `.icon` will throw it into ‘icon’ mode and will
+ * not add a background, but should be used for icon fonts and is populated
+ * through a `data-icon` attribute and the `:after` pseudo-element, e.g.:
+ *
+   <a href=#><i class=icon data-icon="&#xF000;"></i> View your favourites</a>
+ *
+ * Where ‘&#xF000;’ might map to a star in your particular icon font.
+ *
+ * These all require extension in your theme stylesheet, e.g. in your own CSS:
+ *
+   .sprite{
+       background-image:url(path/to/your/sprite.png);
+   }
+   .sprite--link{ background-position:0   0  ; }
+   .sprite--star{ background-position:0 -16px; }
+ *
+ * Demo: jsfiddle.net/inuitcss/6TKuS
+ *
+ */
+.sprite,
+.icon {
+  display: inline-block;
+  line-height: 1;
+  position: relative;
+  vertical-align: middle;
+  zoom: 1;
+  /**
+   * So using `.icon` on certain elements doesn’t make a visual difference.
+   */
+  font-style: normal;
+  font-weight: normal;
+  /**
+   * So icons added using `.icon` sit in the centre of the element.
+   */
+  text-align: center; }
+
+.sprite {
+  /**
+   * The typical size of most icons. Override in your theme stylesheet.
+   */
+  width: 16px;
+  height: 16px;
+  top: -1px;
+  /*
+   * H5BP method image replacement:
+   * github.com/h5bp/html5-boilerplate/commit/adecc5da035d6d76b77e3fa95c6abde841073da2
+   */
+  overflow: hidden;
+  *text-indent: -9999px; }
+  .sprite:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%; }
+
+/**
+ * Set up icon font
+ */
+.icon {
+  font-size: 16px;
+  /**
+   * Place the icon in a box the exact same dimensions as the icon itself.
+   */
+  width: 1em;
+  height: 1em; }
+  .icon:before {
+    content: attr(data-icon); }
+
+/**
+ * Icon size modifiers.
+ */
+.icon--large {
+  font-size: 32px; }
+
+.icon--huge {
+  font-size: 64px; }
+
+.icon--natural {
+  font-size: inherit; }
+
 /**
  * Style trumps; helper and brand classes
  */
@@ -2829,7 +2922,7 @@ pre code {
  *
  */
 html {
-  font: normal 112.5%/1.65 serif; }
+  font: normal 112.5%/1.62 serif; }
 
 body {
   -webkit-hyphens: auto;
@@ -2847,53 +2940,52 @@ h1, h2, h3, h4, h5, h6 {
 .tera {
   font-size: 117px;
   font-size: 6.5rem;
-  margin-bottom: 0.25385rem; }
+  margin-bottom: 0.24923rem; }
 
 .giga {
   font-size: 90px;
   font-size: 5rem;
-  margin-bottom: 0.33rem; }
+  margin-bottom: 0.324rem; }
 
 .mega {
   font-size: 72px;
   font-size: 4rem;
-  margin-bottom: 0.4125rem; }
+  margin-bottom: 0.405rem; }
 
 .alpha, h1 {
   font-size: 60px;
   font-size: 3.33333rem;
-  margin-bottom: 0.495rem; }
+  margin-bottom: 0.486rem; }
 
 .beta, h2 {
   font-size: 48px;
   font-size: 2.66667rem;
-  margin-bottom: 0.61875rem; }
+  margin-bottom: 0.6075rem; }
 
 .gamma, h3 {
   font-size: 36px;
   font-size: 2rem;
-  margin-bottom: 0.825rem; }
+  margin-bottom: 0.81rem; }
 
 .delta, h4 {
   font-size: 24px;
   font-size: 1.33333rem;
-  margin-bottom: 1.2375rem; }
+  margin-bottom: 1.215rem; }
 
 .epsilon, h5 {
   font-size: 21px;
   font-size: 1.16667rem;
-  margin-bottom: 1.41429rem; }
+  margin-bottom: 1.38857rem; }
 
 .zeta, h6 {
   font-size: 18px;
   font-size: 1rem;
-  margin-bottom: 1.65rem; }
+  margin-bottom: 1.62rem; }
 
 p {
   margin: 0 0 1.5em; }
   p + p {
-    text-indent: 1.5em;
-    margin-top: -1.5em; }
+    margin-top: -0.75em; }
 
 abbr,
 acronym,
@@ -3148,6 +3240,9 @@ h1, h2, h3 {
   background-image: url(../img/icon-people.png);
   background-image: url(../img/icon-people.svg), none; }
 
+.delta, h4 {
+  margin-bottom: 0.81rem; }
+
 .logo {
   display: block;
   margin: 24px 8.333%; }
@@ -3175,7 +3270,8 @@ h1, h2, h3 {
   padding: 12px 0; }
 
 .nav--main > li > a:hover {
-  background: #fff; }
+  background: url(../img/bg-nav-active.png) no-repeat center bottom;
+  color: rgba(255, 255, 255, 0.8); }
 
 .dropdown {
   position: relative; }
@@ -3184,7 +3280,7 @@ h1, h2, h3 {
   background: rgba(128, 165, 27, 0.8);
   display: none;
   width: 240px;
-  padding: 12px 24px;
+  padding: 12px 24px 12px 6px;
   position: absolute;
   top: 100%;
   right: -24px;
@@ -3302,8 +3398,13 @@ h1, h2, h3 {
   background-image: url(../img/icon-performance.png);
   background-image: url(../img/icon-performance.svg), none; }
 
+.content__main .media {
+  margin-bottom: 48px;
+  margin-bottom: 3rem; }
+
 .content__aside {
-  color: #006e89; }
+  color: #006e89;
+  font-size: 90%; }
 
 .content__aside dt {
   font-family: 'Titillium Web', sans-serif;
@@ -3357,6 +3458,29 @@ footer a[href^="mailto"] {
 
 footer a:hover {
   border-bottom: 1px solid; }
+
+.sprite {
+  height: 32px;
+  width: 32px; }
+
+.sprite:hover {
+  border: 0; }
+
+.sprite--twitter {
+  background-image: url(../img/logo-twitter-white.png);
+  background-image: url(../img/logo-twitter-white.svg), none; }
+
+.sprite--facebook {
+  background-image: url(../img/logo-facebook-white.png);
+  background-image: url(../img/logo-facebook-white.svg), none; }
+
+.sprite--linkedin {
+  background-image: url(../img/logo-linkedin-white.png);
+  background-image: url(../img/logo-linkedin-white.svg), none; }
+
+.sprite--youtube {
+  background-image: url(../img/logo-youtube-white.png);
+  background-image: url(../img/logo-youtube-white.svg), none; }
 
 .foot__copyright {
   background-image: url(../img/logo-wephysio-white.png);
