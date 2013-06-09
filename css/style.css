@@ -3160,15 +3160,22 @@ h1, h2, h3 {
   text-align: center; }
 
 .nav--main {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin: 0;
   text-align: right; }
 
-.nav--main a {
+.nav--main > li > a,
+.nav--dropdown > li > a {
   color: #fff;
   font-family: 'Titillium Web', sans-serif;
   margin-left: 24px;
   text-decoration: none; }
+
+.nav--main > li > a {
+  height: 100%;
+  padding: 12px 0; }
+
+.nav--main > li > a:hover {
+  background: #fff; }
 
 .dropdown {
   position: relative; }
@@ -3176,7 +3183,6 @@ h1, h2, h3 {
 .nav--dropdown {
   background: rgba(128, 165, 27, 0.8);
   display: none;
-  margin-top: 12px;
   width: 240px;
   padding: 12px 24px;
   position: absolute;
@@ -3186,6 +3192,9 @@ h1, h2, h3 {
 
 .open .nav--dropdown {
   display: block; }
+
+.nav--dropdown > li > a:hover {
+  color: rgba(255, 255, 255, 0.8); }
 
 .hero {
   background-color: rgba(128, 165, 27, 0.13);
