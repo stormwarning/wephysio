@@ -190,7 +190,7 @@ h1, h2, h3, h4 {
 .hero--wiibalance h2 {
   
   @include breakpoint(lap) {
-    padding-top: $base-spacing-unit * 12;
+    padding-top: $base-spacing-unit * 8;
     padding-bottom: $base-spacing-unit * 2;
     width: 50%;
   }
@@ -204,7 +204,7 @@ h1, h2, h3, h4 {
 .hero--demonstration h2 {
   
   @include breakpoint(lap) {
-    padding-top: $base-spacing-unit * 12;
+    padding-top: $base-spacing-unit * 8;
     padding-bottom: $base-spacing-unit * 2;
     width: 50%;
   }
@@ -276,6 +276,10 @@ h1, h2, h3, h4 {
 .content__main h1 + .media {
   margin-top: $base-spacing-unit;
   margin-top: ($base-spacing-unit / $base-font-size)*1rem;
+}
+
+.content__main h3 > small {
+  color: #444;
 }
 
 .content__aside {
