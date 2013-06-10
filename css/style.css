@@ -3343,7 +3343,7 @@ h1, h2, h3, h4 {
 
 @media screen and (min-width: 37.5em) {
   .hero--wiibalance h2 {
-    padding-top: 288px;
+    padding-top: 192px;
     padding-bottom: 48px;
     width: 50%; } }
 
@@ -3353,7 +3353,7 @@ h1, h2, h3, h4 {
 
 @media screen and (min-width: 37.5em) {
   .hero--demonstration h2 {
-    padding-top: 288px;
+    padding-top: 192px;
     padding-bottom: 48px;
     width: 50%; } }
 
@@ -3405,6 +3405,9 @@ h1, h2, h3, h4 {
 .content__main h1 + .media {
   margin-top: 24px;
   margin-top: 1.5rem; }
+
+.content__main h3 > small {
+  color: #444; }
 
 .content__aside {
   color: #006e89;
