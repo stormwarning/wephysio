@@ -3262,6 +3262,22 @@ h1, h2, h3, h4 {
 .nav--main {
   margin: 0;
   text-align: right; }
+  .nav--main > li:first-child {
+    height: 100%; }
+    .nav--main > li:first-child > a {
+      background-position: 100% 50%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 48px;
+      background-image: url(../img/logo-wephysio-home.png);
+      background-image: url(../img/logo-wephysio-home.svg), none; }
+      .nav--main > li:first-child > a:hover {
+        background-position: 100% 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0.8;
+        background-image: url(../img/logo-wephysio-home.png);
+        background-image: url(../img/logo-wephysio-home.svg), none; }
 
 .nav--main > li > a,
 .nav--dropdown > li > a {

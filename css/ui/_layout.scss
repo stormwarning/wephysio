@@ -76,6 +76,28 @@ h1, h2, h3, h4 {
 .nav--main {
   margin: 0;
   text-align: right;
+
+  > li:first-child {
+    height: 100%;
+
+    > a {
+      background-position: 100% 50%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: $base-spacing-unit*2;
+
+      @include logo-bg(wephysio-home);
+
+      &:hover {
+        background-position: 100% 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0.8;
+
+        @include logo-bg(wephysio-home);
+      }
+    }
+  }
 }
 
 .nav--main > li > a,
