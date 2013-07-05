@@ -3215,9 +3215,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #f7a600;
-  font-family: 'Titillium Web', sans-serif; }
-
-h1, h2, h3, h4 {
+  font-family: 'Titillium Web', sans-serif;
   font-weight: normal; }
 
 .content h1 {
@@ -3247,6 +3245,12 @@ h1, h2, h3, h4 {
 
 .delta, h4 {
   margin-bottom: 0.81rem; }
+
+.epsilon, h5 {
+  margin-bottom: 1.215rem; }
+
+.zeta, h6 {
+  margin-bottom: 1.38857rem; }
 
 .logo {
   display: block;
@@ -3318,7 +3322,7 @@ h1, h2, h3, h4 {
   right: -24px;
   z-index: 1000; }
 
-.open .nav--dropdown {
+.dropdown:hover .nav--dropdown {
   display: block; }
 
 .nav--dropdown > li > a:hover {
