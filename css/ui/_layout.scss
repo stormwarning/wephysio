@@ -127,6 +127,10 @@ body {
 .dropdown {
   position: relative;
 
+}
+
+.dropdown-toggle {
+
   // Add caret to dropdown link
   &:after {
     border-top: 4px solid #fff;
@@ -140,6 +144,16 @@ body {
     vertical-align: baseline;
     width: 0;
   }
+
+  &:hover {
+
+
+    &:after {
+      border-top-color: transparentize(#fff, 0.2);
+    }
+
+  }
+
 }
 
 .nav--dropdown {
@@ -373,6 +387,25 @@ body {
 
   &:hover {
     border-bottom: 1px solid;
+  }
+}
+
+.widget {
+
+  h4 {
+    color: $brand-blue;
+  }
+
+  ul {
+    list-style: none;
+  }
+}
+
+.blog-post__foot {
+  background-color: $brand-blue;
+
+  a {
+    color: #fff;
   }
 }
 
