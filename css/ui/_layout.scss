@@ -29,16 +29,24 @@ body {
   text-align: left;
 }
 
-.title--wellness {
+.title--wellness,
+.title--6 {
   @include icon-bg(wellness);
 }
-.title--performance {
+.title--performance,
+.title--8,
+.entry-title {
   @include icon-bg(performance);
 }
-.title--cardio {
+.title--cardio,
+.title--10,
+.title--12,
+.title--14,
+.title--16 {
   @include icon-bg(cardio);
 }
-.title--people {
+.title--people,
+.title--27 {
   @include icon-bg(people);
 }
 
@@ -139,8 +147,8 @@ body {
     content: "";
     display: inline-block;
     height: 0;
-    margin-bottom: -$base-spacing-unit/2.5;
-    margin-left: -$base-spacing-unit/2;
+    margin-bottom: 4px;
+    margin-left: 6px;
     vertical-align: baseline;
     width: 0;
   }
@@ -178,6 +186,14 @@ body {
   color: transparentize(#fff, 0.2);
 }
 
+.link--previous {
+    text-align: left;
+}
+
+.left--next {
+    text-align: right;
+}
+
 
 
 
@@ -202,10 +218,12 @@ body {
   text-shadow: 0px 1px 0px $brand-green;
 }
 
-.hero--cycling {
+.hero--cycling,
+.hero--2 {
   background-image: url(../img/hero-cycling.jpg);
 }
-.hero--cycling h2 {
+.hero--cycling h2,
+.hero--2 h2 {
 
   @include breakpoint(lap) {
     padding-top: $base-spacing-unit * 2;
@@ -214,11 +232,13 @@ body {
   }
 }
 
-.hero--running {
+.hero--running,
+.hero--8 {
   background-image: url(../img/hero-running.jpg);
   background-position: 50% 100%;
 }
-.hero--running h2 {
+.hero--running h2,
+.hero--8 h2 {
 
   @include breakpoint(lap) {
     padding-top: $base-spacing-unit * 2;
@@ -228,10 +248,12 @@ body {
 }
 
 
-.hero--taping {
+.hero--taping,
+.hero--6 {
   background-image: url(../img/hero-taping.jpg);
 }
-.hero--taping h2 {
+.hero--taping h2,
+.hero--6 h2 {
 
   @include breakpoint(lap) {
     padding-top: $base-spacing-unit * 6;
@@ -241,11 +263,19 @@ body {
 }
 
 
-.hero--wiibalance {
+.hero--wiibalance,
+.hero--10,
+.hero--12,
+.hero--14,
+.hero--16 {
   background-image: url(../img/hero-wiibalance.jpg);
   background-position: 50% 10%;
 }
-.hero--wiibalance h2 {
+.hero--wiibalance h2,
+.hero--10 h2,
+.hero--12 h2,
+.hero--14 h2,
+.hero--16 h2 {
 
   @include breakpoint(lap) {
     padding-top: $base-spacing-unit * 8;
@@ -255,11 +285,19 @@ body {
 }
 
 
-.hero--demonstration {
+.hero--demonstration,
+.hero--27,
+.blog .hero,
+.single .hero,
+.archive .hero {
   background-image: url(../img/hero-demonstration.jpg);
   background-position: 50% 40%;
 }
-.hero--demonstration h2 {
+.hero--demonstration h2,
+.hero--27 h2,
+.blog .hero h2,
+.single .hero h2,
+.archive .hero h2 {
 
   @include breakpoint(lap) {
     padding-top: $base-spacing-unit * 8;

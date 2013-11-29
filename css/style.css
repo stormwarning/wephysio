@@ -47,7 +47,7 @@
 /*------------------------------------*\
     INUIT.CSS
 \*------------------------------------*/
-/**
+/*!*
  *
  * inuitcss.com -- @inuitcss -- @csswizardry
  *
@@ -383,7 +383,7 @@
  *
  * We work out your end points for you:
  */
-/* normalize.css v2.1.0 | MIT License | git.io/normalize */
+/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -1805,6 +1805,40 @@ label,
   padding: 12px; }
 
 /*------------------------------------*\
+    $THIS-OR-THIS
+\*------------------------------------*/
+/**
+ * Simple options object to provide multiple choices, e.g.:
+ *
+   <h1 class=this-or-this>
+       <a href=# class="this-or-this__this  two-fifths">
+           Free
+       </a>
+       <span class="this-or-this__or  one-fifth">
+           or
+       </span>
+       <a href=# class="this-or-this__this  two-fifths">
+           Pro
+       </a>
+   </h1>
+ *
+ * The `.this-or-this__this` and `.this-or-this__or` objects can be sized using
+ * the grid-system classes.
+ *
+ * Demo: jsfiddle.net/inuitcss/R3sks
+ *
+ */
+.this-or-this {
+  display: table;
+  width: 100%;
+  text-align: center; }
+
+.this-or-this__this,
+.this-or-this__or {
+  display: table-cell;
+  vertical-align: middle; }
+
+/*------------------------------------*\
     $SPRITE
 \*------------------------------------*/
 /**
@@ -2877,7 +2911,7 @@ label,
     position: absolute !important;
     width: 1px !important; } }
 /* endif */
-/*
+/*!
 +---------------------------------------------------------------------+
 |        _                               _         _                  |
 |       | |_  _   _  _ __    ___  _ __  | |  __ _ | |_  ___           |
@@ -3227,19 +3261,27 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 80px;
   text-align: left; }
 
-.title--wellness {
+.title--wellness,
+.title--6 {
   background-image: url(../img/icon-wellness.png);
   background-image: url(../img/icon-wellness.svg), none; }
 
-.title--performance {
+.title--performance,
+.title--8,
+.entry-title {
   background-image: url(../img/icon-performance.png);
   background-image: url(../img/icon-performance.svg), none; }
 
-.title--cardio {
+.title--cardio,
+.title--10,
+.title--12,
+.title--14,
+.title--16 {
   background-image: url(../img/icon-cardio.png);
   background-image: url(../img/icon-cardio.svg), none; }
 
-.title--people {
+.title--people,
+.title--27 {
   background-image: url(../img/icon-people.png);
   background-image: url(../img/icon-people.svg), none; }
 
@@ -3308,8 +3350,8 @@ h1, h2, h3, h4, h5, h6 {
   content: "";
   display: inline-block;
   height: 0;
-  margin-bottom: -9.6px;
-  margin-left: -12px;
+  margin-bottom: 4px;
+  margin-left: 6px;
   vertical-align: baseline;
   width: 0; }
 .dropdown-toggle:hover:after {
@@ -3331,6 +3373,12 @@ h1, h2, h3, h4, h5, h6 {
 .nav--dropdown > li > a:hover {
   color: rgba(255, 255, 255, 0.8); }
 
+.link--previous {
+  text-align: left; }
+
+.left--next {
+  text-align: right; }
+
 .hero {
   background-color: rgba(128, 165, 27, 0.13);
   background-position: center center;
@@ -3348,50 +3396,72 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left;
   text-shadow: 0px 1px 0px #80a51b; }
 
-.hero--cycling {
+.hero--cycling,
+.hero--2 {
   background-image: url(../img/hero-cycling.jpg); }
 
 @media screen and (min-width: 37.5em) {
-  .hero--cycling h2 {
+  .hero--cycling h2,
+  .hero--2 h2 {
     padding-top: 48px;
     padding-bottom: 48px;
     width: 33.333%; } }
 
-.hero--running {
+.hero--running,
+.hero--8 {
   background-image: url(../img/hero-running.jpg);
   background-position: 50% 100%; }
 
 @media screen and (min-width: 37.5em) {
-  .hero--running h2 {
+  .hero--running h2,
+  .hero--8 h2 {
     padding-top: 48px;
     padding-bottom: 48px;
     width: 33.333%; } }
 
-.hero--taping {
+.hero--taping,
+.hero--6 {
   background-image: url(../img/hero-taping.jpg); }
 
 @media screen and (min-width: 37.5em) {
-  .hero--taping h2 {
+  .hero--taping h2,
+  .hero--6 h2 {
     padding-top: 144px;
     padding-bottom: 48px;
     width: 75%; } }
 
-.hero--wiibalance {
+.hero--wiibalance,
+.hero--10,
+.hero--12,
+.hero--14,
+.hero--16 {
   background-image: url(../img/hero-wiibalance.jpg);
   background-position: 50% 10%; }
 
 @media screen and (min-width: 37.5em) {
-  .hero--wiibalance h2 {
+  .hero--wiibalance h2,
+  .hero--10 h2,
+  .hero--12 h2,
+  .hero--14 h2,
+  .hero--16 h2 {
     padding-top: 192px;
     padding-bottom: 48px;
     width: 50%; } }
 
-.hero--demonstration {
+.hero--demonstration,
+.hero--27,
+.blog .hero,
+.single .hero,
+.archive .hero {
   background-image: url(../img/hero-demonstration.jpg);
   background-position: 50% 40%; }
 
 @media screen and (min-width: 37.5em) {
-  .hero--demonstration h2 {
+  .hero--demonstration h2,
+  .hero--27 h2,
+  .blog .hero h2,
+  .single .hero h2,
+  .archive .hero h2 {
     padding-top: 192px;
     padding-bottom: 48px;
     width: 50%; } }
