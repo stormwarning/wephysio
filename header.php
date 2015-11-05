@@ -44,7 +44,7 @@
                             </ul>
                         </li>
                         <li><a href="/the-team/">The Team</a></li>
-<!--                         <li><a href="blog/">Blog</a></li> -->
+                        <li><a href="/blog/">Blog</a></li>
                     </ul>
 
                 </div>
