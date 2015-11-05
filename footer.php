@@ -18,11 +18,16 @@
 
                         <div class="foot__contact">
                             <h5>WePhysio</h5>
-                            <address>Suite #311, 9509 156 St NW [<a href="http://goo.gl/maps/aX5J7" target="_blank">map</a>]<br>Edmonton, AB T5P 4J5</address>
+                            <address>11152 142 Street NW [<a href="http://goo.gl/maps/aX5J7" target="_blank">map</a>]<br>Edmonton, AB T5M 4G5</address>
 
                             <p>Ph: <a href="tel:7804840514">780-484-0514</a><br>
                             Fax: <a href="tel:7804841347">780-484-1347</a><br>
-                            <a href="mailto:info@wephysio.com">info@wephysio.com</a></p>
+                            <a href="mailto:info@wephysio.com">info@wephysio.com</a><br></p>
+<p><strong>24/7 Online Appointment Request</strong>
+<link rel="stylesheet" type="text/css" href="https://www.connectthedoc.com/assets/5eb0a308/book_now.css" />
+                                <a type="button" role="button" target="_blank" href="https://www.connectthedoc.com/clinicAccount/customizedSearch/id/3047" class="btn_book_now btn_book_now_3">Book Now</a>
+
+</p>
                         </div>
 
                     </div><!--
@@ -30,8 +35,9 @@
 
                         <div class="foot__hours">
                             <h5>Hours</h5>
-                            <p>Monday to Friday 7:00am&#8211;6:30pm<br>
-                            Saturday 9:00am&#8211;12:30pm<br>
+                            <p>Monday, Wednesday, Friday 7:00am&#8211;6:30pm<br>
+                            Tuesday, Thursday 7:00am&#8211;5:00pm<br>
+                            Saturdays available by appointment<br>
                             Closed Sundays and holidays</p>
 
                             <div class="foot__social">
