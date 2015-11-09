@@ -423,8 +423,19 @@ body {
   color: $brand-orange;
   text-decoration: none;
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     border-bottom: 1px solid;
+  }
+}
+
+.content .btn {
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom: 0;
   }
 }
 
@@ -447,6 +458,19 @@ body {
   }
 }
 
+
+.btn {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  color: #fff !important;
+  background-color: $brand-blue;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: mix($brand-blue, #fff, 80%);
+  }
+}
 
 
 
@@ -479,6 +503,15 @@ footer a[href^="mailto"] {
 
 footer a:hover {
   border-bottom: 1px solid;
+}
+
+footer .btn {
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom: 0;
+  }
 }
 
 
