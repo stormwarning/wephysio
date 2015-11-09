@@ -23,11 +23,8 @@
                             <p>Ph: <a href="tel:7804840514">780-484-0514</a><br>
                             Fax: <a href="tel:7804841347">780-484-1347</a><br>
                             <a href="mailto:info@wephysio.com">info@wephysio.com</a><br></p>
-<p><strong>24/7 Online Appointment Request</strong>
-<link rel="stylesheet" type="text/css" href="https://www.connectthedoc.com/assets/5eb0a308/book_now.css" />
-                                <a type="button" role="button" target="_blank" href="https://www.connectthedoc.com/clinicAccount/customizedSearch/id/3047" class="btn_book_now btn_book_now_3">Book Now</a>
-
-</p>
+                            <p><strong>24/7 Online Appointment Request</strong><br>
+                              <a class="btn" href="http://www.clinicmasterportal.com/?c=E10EAE00EA" target="_blank">Book Now</a></p>
                         </div>
 
                     </div><!--
